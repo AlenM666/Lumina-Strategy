@@ -6,13 +6,13 @@
 
 Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
 
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
+Created and maintained with ❤️ by [Lumina Strategy](https://lumina-strategy.vercel.app/).
 
 *The previous version built with the Cruip CSS is available [here](https://github.com/cruip/open-react-template/releases/tag/1.0.0).*
 
 ## Live demo
 
-Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
+Check the live demo here 👉️ [https://lumina-strategy.vercel.app/](https://lumina-strategy.vercel.app/)
 
 ## Open PRO
 
