@@ -42,7 +42,7 @@ function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
 
-            <img src={"/image2vector.svg"} className="App-logo mx-auto" alt="logo" height={"220px"} width={"220px"} />
+            <img src={"/image2vector.svg"} className="App-logo mx-auto pt-10 " alt="logo" height={"100px"} width={"100px"} />
           </div>
 
           {/* Desktop navigation */}
