@@ -69,7 +69,7 @@ function Header() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Hamburger button */}
-            <button ref={trigger} className={`hamburger ${desktopNavOpen && 'active'}`} aria-controls="mobile-nav" aria-expanded={desktopNavOpen} onClick={() => setDesktopNavOpen(!desktopNavOpen)}>
+            <button ref={trigger} className={`hamburger ${desktopNavOpen && 'active'}`} aria-controls="desktop-nav" aria-expanded={desktopNavOpen} onClick={() => setDesktopNavOpen(!desktopNavOpen)}>
               <span className="sr-only">Menu</span>
               <svg className="w-6 h-6 fill-current text-gray-800 hover:text-gray-200 transition duration-150 ease-in-out absolute top-0 right-0 mr-14 mt-9" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <rect y="4" width="24" height="2" rx="1" />
