@@ -5,8 +5,6 @@ import Dropdown from '../utils/Dropdown';
 
 function Header() {
 
-
-
   const [desktopNavOpen, setDesktopNavOpen] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
@@ -15,7 +13,7 @@ function Header() {
   const desktopNav = useRef(null);
 
   //close the desktop menu on click outside
-    useEffect(() => {
+  useEffect(() => {
     const clickHandler = ({ target }) => {
       if (!desktopNav.current || !trigger.current) return;
       if (!desktopNavOpen || desktopNav.current.contains(target) || trigger.current.contains(target)) return;
@@ -23,7 +21,7 @@ function Header() {
     };
     document.addEventListener('click', clickHandler);
     return () => document.removeEventListener('click', clickHandler);
-  }); 
+  });
 
   // close the desktop menu on click outside
   useEffect(() => {
@@ -33,7 +31,7 @@ function Header() {
     };
     document.addEventListener('keydown', keyHandler);
     return () => document.removeEventListener('keydown', keyHandler);
-  }); 
+  });
 
   // close the mobile menu on click outside
   useEffect(() => {
@@ -71,14 +69,14 @@ function Header() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Hamburger button */}
-              <button ref={trigger} className={`hamburger ${desktopNavOpen && 'active'}`} aria-controls="mobile-nav" aria-expanded={desktopNavOpen} onClick={() => setDesktopNavOpen(!desktopNavOpen)}>
-                <span className="sr-only">Menu</span>
-                <svg className="w-6 h-6 fill-current text-gray-800 hover:text-gray-200 transition duration-150 ease-in-out absolute top-0 right-0 mr-14 mt-9" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <rect y="4" width="24" height="2" rx="1" />
-                  <rect y="11" width="24" height="2" rx="1" />
-                  <rect y="18" width="24" height="2" rx="1" />
-                </svg>
-              </button>
+            <button ref={trigger} className={`hamburger ${desktopNavOpen && 'active'}`} aria-controls="mobile-nav" aria-expanded={desktopNavOpen} onClick={() => setDesktopNavOpen(!desktopNavOpen)}>
+              <span className="sr-only">Menu</span>
+              <svg className="w-6 h-6 fill-current text-gray-800 hover:text-gray-200 transition duration-150 ease-in-out absolute top-0 right-0 mr-14 mt-9" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect y="4" width="24" height="2" rx="1" />
+                <rect y="11" width="24" height="2" rx="1" />
+                <rect y="18" width="24" height="2" rx="1" />
+              </svg>
+            </button>
 
             {/* Desktop sign in links */}
             <nav id="desktop-nav" ref={desktopNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={desktopNavOpen ? { maxHeight: desktopNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 }}>

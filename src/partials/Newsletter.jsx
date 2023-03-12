@@ -14,7 +14,7 @@ function Newsletter() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* CTA box */}
-        <div className="relative bg-purple-600 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
+        <div className="relative bg-purple-600 py-10 px-8 md:py-16 md:px-12 rounded-xl" data-aos="fade-up">
 
           {/* Background illustration */}
           <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
@@ -23,10 +23,10 @@ function Newsletter() {
             </svg>
           </div>
 
-          <div className="relative flex flex-col lg:flex-row justify-between items-center">
+          <div className="relative flex flex-col lg:flex-row justify-between items-center rounded-full">
 
             {/* CTA content */}
-            <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2 rounded-xl" id="contact-us">
+            <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2" id="contact-us">
               <h3 className="h3 text-white mb-2">Contact us</h3>
               <p className="text-white text-lg">Enter your Email so we can start to manage your OnlyFans account</p>
             </div>
