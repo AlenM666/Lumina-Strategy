@@ -28,18 +28,17 @@ function HeroHome() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4 pt-10" data-aos="fade-up">
+            <h1 className="h2 mb-4 drop-shadow-xl shadow-black" data-aos="fade-up">
               Lumina OnlyFans Management
             </h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+            <p className="text-sm text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">
               We are an OnlyFans management company that specializes in helping content creators reach their full potential and achieve success on the platform.
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="/#contact-us" onClick={() => scrollSection(workWithUs)}>
+                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0 shadow-xl rounded-full" href="/#contact-us" onClick={() => scrollSection(workWithUs)}>
                   Work With us
                 </a>
-
               </div>
             </div>
           </div>
@@ -47,7 +46,7 @@ function HeroHome() {
           {/* Hero image */}
           <div>
             <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
-              <img className="mx-auto" src={"/ss.svg"} width="1024" height="504" alt="Hero" />
+              <img className="mx-auto shadow-2xl rounded-3xl" src={"/ss.svg"} width="1024" height="504" alt="Hero" />
               <a
                 className="absolute group"
                 href="#0"
